@@ -10,8 +10,7 @@ export default {
 </script>
 <template>
     <div class="border p-3 bg-gray-100 rounded">
-        <h2>{{ containerTitle }}</h2>
-
+        <h2 class="font-bold text-lg">{{ containerTitle }}</h2>
         <div class="mt-4 p-2 rounded">
             <slot></slot>
         </div>

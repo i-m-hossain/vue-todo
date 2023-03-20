@@ -41,7 +41,7 @@ export default {
 </script>
 <template>
     <div class="flex justify-between space-x-2 mt-2 border-b pb-2">
-        <p v-bind:class="{ 'line-through': todo.completed }">
+        <p v-bind:class="{ 'line-through': todo.completed }" >
             {{ todo.todo }}
         </p>
         <input
@@ -49,10 +49,10 @@ export default {
             @change="handleComplete(todo.id)"
             :checked="todo.completed"
         />
-        <button class="border px-2" v-if="!todo.completed">Edit</button>
+        <button class="border px-2 rounded-md bg-blue-200" v-if="!todo.completed">Edit</button>
         <button
             type="button"
-            class="border px-2"
+            class="border px-2 bg-red-200 rounded-md"
             @click="handleDelete(todo.id)"
         >
             Delete

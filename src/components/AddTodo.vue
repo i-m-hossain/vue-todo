@@ -28,9 +28,9 @@ export default {
 };
 </script>
 <template>
-    <form class="rounded mt-2 w-full flex" @submit="handleSubmit">
-        <input type="text" class="border w-3/4 p-2" v-model="todo" />
-        <button type="submit" class="border px-4 w-1/4 bg-green-100">
+    <form class="mt-2 w-full flex" @submit="handleSubmit">
+        <input type="text" class="border rounded-r-none rounded-md w-3/4 p-2 outline-gray-200" v-model="todo" />
+        <button type="submit" class="border rounded-l-none rounded-md px-4 w-1/4 bg-green-100">
             Add Todo
         </button>
     </form>
