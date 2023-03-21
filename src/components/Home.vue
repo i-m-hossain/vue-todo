@@ -28,10 +28,10 @@ export default {
 </script>
 
 <template>
-    <div class="flex justify-center">
-       
+    
+    <div class="flex justify-center mt-5">
         <div>
-            <h2 class="text-center mt-5 font-bold">
+            <h2 class="text-center  font-bold">
                 {{ appTitle }}
             </h2>
             <div class="flex flex-col space-y-4 w-full rounded-md">
@@ -45,7 +45,7 @@ export default {
                             v-if="this.incompleteTodos.length < 1"
                             class="bg-red-100 px-2"
                         >
-                            No data found
+                            Add new to do!
                         </h2>
                         <div
                             v-for="item of incompleteTodos"
@@ -65,7 +65,7 @@ export default {
                             v-if="this.completedTodos.length < 1"
                             class="bg-red-100 px-2"
                         >
-                            No data found
+                            No completed todo available!
                         </h2>
                         <div
                             v-for="item of completedTodos"
